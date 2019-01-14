@@ -1,0 +1,21 @@
+name:       control-theory
+version:    0.0.1
+synopsis:   Abstractions and algorithms related to control theory
+author:     John Wiegley
+maintainer: johnw@newartisans.com
+github:     jwiegley/control-theory
+category:   System
+license:    MIT
+
+dependencies:
+  - base                 >= 4      && < 5
+  - mtl
+  - transformers
+  - stm
+  - time
+  - ListLike
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - Control.Theory.Queue
