@@ -1,0 +1,18 @@
+language: nix
+
+sudo: true
+
+git:
+  depth: 1
+
+env:
+  global:
+  matrix:
+    - GHCVERSION=ghc844
+
+matrix:
+  allow_failures:
+  exclude:
+
+script:
+  - nix-build --argstr compiler $GHCVERSION
